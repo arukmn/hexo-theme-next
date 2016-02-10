@@ -26,7 +26,7 @@
       <section class="site-overview sidebar-panel {% if not display_toc %} sidebar-panel-active {% endif %}">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="{{ theme.avatar or url_for(theme.images) + '/default_avatar.jpg' }}"
+               src="{{ theme.avatar or url_for(theme.images) + '/inspectcat.png' }}"
                alt="{{ theme.author }}" />
           <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
           <p class="site-description motion-element" itemprop="description">{{ theme.description }}</p>
@@ -38,7 +38,7 @@
               <span class="site-state-item-name">{{ __('state.posts') }}</span>
             </a>
           </div>
-          
+
           {% if site.categories.length > 0 %}
             <div class="site-state-item site-state-categories">
               {% if theme.menu.categories %}<a href="{{ url_for(theme.menu.categories) }}">{% endif %}
