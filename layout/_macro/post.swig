@@ -57,6 +57,10 @@
             </time>
           </span>
 
+          <span>
+            {{ hatenabookmark(post.permalink, post.title, 'simple-balloon') }}
+          </span>
+
           {% if post.categories and post.categories.length %}
             <span class="post-category" >
               &nbsp; | &nbsp;
